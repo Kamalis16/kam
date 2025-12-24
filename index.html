@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script type="text/javascript" src="/___vscode_livepreview_injected_script"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Drooling Pastries 👩🏻‍🍳🍫</title>
+
+<!-- Instagram icon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+  font-family:Arial, Helvetica, sans-serif;
+  background:#fff8f0;
+  color:#4e342e;
+}
+
+/* ================= HEADER ================= */
+header{
+  padding:35px 8%;
+  background:linear-gradient(135deg,#ffe0b2,#ffccbc);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+/* Insta */
+.insta{
+  font-weight:bold;
+  font-size:1.1rem;
+}
+.insta a{
+  text-decoration:none;
+  color:#6d4c41;
+}
+.insta i{
+  margin-right:6px;
+}
+
+/* Center title */
+.header-center{
+  text-align:center;
+  animation:bounce 2s infinite;
+}
+.header-center h1{font-size:3rem;}
+.header-center p{margin-top:8px;}
+
+/* Logo (≈3cm) */
+.logo img{
+  height:110px;
+  width:auto;
+}
+
+/* Bounce animation */
+@keyframes bounce{
+  0%,20%,50%,80%,100%{transform:translateY(0);}
+  40%{transform:translateY(-15px);}
+  60%{transform:translateY(-8px);}
+}
+
+/* ================= SECTIONS ================= */
+section{
+  padding:50px 8%;
+  animation:fadeUp 1s ease;
+}
+
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(30px);}
+  to{opacity:1;transform:translateY(0);}
+}
+
+h2{
+  text-align:center;
+  margin-bottom:30px;
+  font-size:2.2rem;
+  color:#6d4c41;
+}
+
+/* ================= BROWNIE SLIDES ================= */
+.slide{
+  display:flex;
+  gap:30px;
+  margin-bottom:40px;
+  justify-content:center;
+}
+
+.item{
+  width:45%;
+  background:#fff;
+  border-radius:20px;
+  padding:20px;
+  text-align:center;
+  border:2px solid #8d5524;
+  box-shadow:0 10px 25px rgba(0,0,0,0.1);
+  transition:0.4s;
+}
+.item:hover{
+  transform:scale(1.05) translateY(-5px);
+}
+
+.img-box{
+  height:260px;
+  border-radius:15px;
+  overflow:hidden;
+  margin-bottom:15px;
+}
+.img-box img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.price{
+  font-weight:bold;
+  color:#e65100;
+  font-size:1.2rem;
+}
+
+/* ================= CUSTOM TOPPING ================= */
+.custom-box{
+  max-width:500px;
+  margin:auto;
+  border-radius:20px;
+  overflow:hidden;
+  border:3px solid #8d5524;
+  animation:zoomIn 1s ease;
+}
+@keyframes zoomIn{
+  from{transform:scale(0.9);opacity:0;}
+  to{transform:scale(1);opacity:1;}
+}
+.custom-box img{
+  width:100%;
+  height:260px;
+  object-fit:cover;
+}
+
+/* ================= BROWNIE BITES ================= */
+.bites-box{
+  max-width:650px;
+  margin:auto;
+}
+.bites-box .item{width:100%;}
+
+/* ================= FULL SLAB ================= */
+.poster-box{
+  max-width:500px;
+  height:320px;
+  margin:auto;
+  border-radius:20px;
+  border:3px solid #8d5524;
+  overflow:hidden;
+}
+.poster-box img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+/* ================= BIRTHDAY ================= */
+.birthday-box{
+  max-width:600px;
+  margin:30px auto;
+  background:#fff;
+  border-radius:20px;
+  border:3px solid #8d5524;
+  padding:20px;
+  display:flex;
+  gap:20px;
+  align-items:center;
+}
+
+.birthday-box img{
+  width:40%;
+  height:200px;
+  object-fit:cover;
+  border-radius:15px;
+}
+
+.birthday-details{
+  width:60%;
+}
+.birthday-details h3{margin-bottom:10px;}
+.birthday-details p{
+  line-height:1.8;
+  font-weight:bold;
+}
+
+/* ================= FOOTER ================= */
+footer{
+  text-align:center;
+  padding:25px;
+  background:#ffe0b2;
+  margin-top:40px;
+}
+
+/* ================= MOBILE ================= */
+@media(max-width:768px){
+  header{
+    flex-direction:column;
+    gap:15px;
+  }
+  .slide,.birthday-box{
+    flex-direction:column;
+  }
+  .item,.birthday-box img,.birthday-details{
+    width:100%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="insta">
+    <a href="https://www.instagram.com/drooling_pastries_py" target="_blank">
+      <i class="fab fa-instagram"></i>@drooling_pastries_py
+    </a>
+  </div>
+
+  <div class="header-center">
+    <h1>Drooling Pastries 👩🏻‍🍳🍫</h1>
+    <p>Soft • Fresh • Homemade Brownies</p>
+  </div>
+
+  <div class="logo">
+    <img src="logo.png" alt="Drooling Pastries Logo">
+  </div>
+</header>
+
+<!-- BROWNIES -->
+<section>
+<h2>Our Brownie Specials</h2>
+
+<div class="slide">
+  <div class="item"><div class="img-box"><img src="classic_brownie.jpg"></div><h3>Classic Brownie</h3><p class="price">₹50</p></div>
+  <div class="item"><div class="img-box"><img src="nuts_brownie.jpg"></div><h3>Nuts Brownie</h3><p class="price">₹55</p></div>
+</div>
+
+<div class="slide">
+  <div class="item"><div class="img-box"><img src="oreo_brownie.jpg"></div><h3>Oreo Brownie</h3><p class="price">₹60</p></div>
+  <div class="item"><div class="img-box"><img src="dairy_milk_brownie.jpg"></div><h3>Dairy Milk Brownie</h3><p class="price">₹60</p></div>
+</div>
+
+<div class="slide">
+  <div class="item"><div class="img-box"><img src="kitkat_brownie.jpg"></div><h3>KitKat Brownie</h3><p class="price">₹60</p></div>
+  <div class="item"><div class="img-box"><img src="double_chocolate_brownie.jpg"></div><h3>Double Chocolate Brownie</h3><p class="price">₹70</p></div>
+</div>
+
+<div class="slide">
+  <div class="item"><div class="img-box"><img src="ferrero_rocher_brownie.jpg"></div><h3>Ferrero Rocher Brownie</h3><p class="price">₹95</p></div>
+  <div class="item"><div class="img-box"><img src="biscoff_brownie.jpg"></div><h3>Biscoff Brownie</h3><p class="price">₹70</p></div>
+</div>
+
+<div class="slide">
+  <div class="item"><div class="img-box"><img src="triple_chocolate_brownie.jpg"></div><h3>Triple Chocolate Brownie</h3><p class="price">₹75</p></div>
+</div>
+</section>
+
+<!-- CUSTOM TOPPING -->
+<section>
+<h2>Customized Brownie Available</h2>
+<div class="custom-box">
+  <img src="customized_toppings.jpg">
+</div>
+</section>
+
+<!-- BROWNIE BITES -->
+<section>
+<h2>Brownie Bites with Chocolate Ganache</h2>
+<div class="bites-box">
+  <div class="item">
+    <div class="img-box"><img src="brownie_bites.jpg"></div>
+    <h3>Brownie Bites</h3>
+    <p class="price">
+      100gm – ₹140<br>
+      150gm – ₹200<br>
+      300gm – ₹379
+    </p>
+  </div>
+</div>
+</section>
+
+<!-- FULL SLAB -->
+<section>
+<h2>Full Slab Brownie</h2>
+<div class="poster-box">
+  <img src="full_slab_brownie_poster.jpeg">
+</div>
+</section>
+
+<!-- BIRTHDAY -->
+<section>
+<h2>Birthday Brownie Orders 🎂</h2>
+
+<div class="birthday-box">
+  <img src="birthday_brownie.jpeg">
+  <div class="birthday-details">
+    <h3>300gm (1/4 kg)</h3>
+    <p>
+      Full slab without decoration – ₹300<br>
+      With simple decoration & topping – ₹350
+    </p>
+  </div>
+</div>
+
+<div class="birthday-box">
+  <img src="500gm.jpeg">
+  <div class="birthday-details">
+    <h3>Half kg</h3>
+    <p>
+      Full slab without decoration – ₹500<br>
+      With simple decoration & topping – ₹570
+    </p>
+  </div>
+</div>
+</section>
+
+<footer>
+Drooling Pastries | Order & Enjoy 🍫
+</footer>
+
+</body>
+</html>
